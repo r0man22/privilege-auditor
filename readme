@@ -1,0 +1,37 @@
+# Proje Adı: PrivilegeAuditor
+
+### Açıklama
+PrivilegeAuditor, sistemdeki **SUID dosyalarını** ve diğer potansiyel güvenlik açıklarını tarayarak, **privilege escalation** risklerini analiz eden bir araçtır. 
+
+---
+
+### Özellikler
+- SUID ayarlı dosyaları tespit eder.
+- [GTFOBins](https://gtfobins.github.io/) veritabanı ile karşılaştırma yapar.
+- İleride eklenebilecek özellikler:
+  - Daha fazla privilege escalation vektörü tespiti
+
+---
+
+### Kurulum
+Projeyi çalıştırmak için aşağıdaki adımları takip edin:
+
+1. Depoyu klonlayın:
+   ```bash
+   git clone https://github.com/kullanıcı_adı/PrivilegeAuditor.git
+   cd PrivilegeAuditor
+
+1. Gerekli Python kütüphanelerini yükleyin:
+   ```bash
+   Copy code
+   pip install -r requirements.txt
+
+### Kullanım
+   PrivilegeAuditor'u başlatın:
+   ```bash
+   Copy code
+
+   python privilege_auditor.py
+
+###Çıktılar
+   Tarama tamamlandıktan sonra, sistemde privilege escalation riski taşıyan dosyalar ekranda listelenir.
